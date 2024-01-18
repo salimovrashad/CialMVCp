@@ -1,0 +1,23 @@
+﻿@model WorkerCreateItemVM
+@{
+    ViewData["Title"] = "Create";
+}
+<div class="container">
+
+    <form method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label asp-for="ImageURL" class="form-label">ImageUrl</label>
+            <input asp-for="ImageURL" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label asp-for="Name" class="form-label">Name</label>
+            <input asp-for="Name" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            <label asp-for="SocialMediaId" class="form-label">SocialMedias</label>
+            <select asp-for="SocialMediaId" asp-items="@ViewBag.SocialMedia" class="form-control" id="exampleInputPassword1"></select>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+</div>

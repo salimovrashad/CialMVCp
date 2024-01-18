@@ -1,0 +1,20 @@
+﻿@model WorkerUpdateItemVM
+@{
+    ViewData["Title"] = "Update";
+}
+
+<div class="container">
+
+    <form method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label asp-for="ImageURL" class="form-label">ImageUrl</label>
+            <input asp-for="ImageURL" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label asp-for="Name" class="form-label">Name</label>
+            <input asp-for="Name" class="form-control" id="exampleInputPassword1">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+</div>
